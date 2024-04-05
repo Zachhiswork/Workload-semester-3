@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(57, 57, 57);
+}
+
+.container{
+    position: absolute;
+    width: 50%;
+    min-width: 580px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    padding: 50px 10px;
+    display: grid;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+h3{
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+input[type="text2"]{
+    width: 120px;
+    margin: 0 auto;
+    font-weight: 600;
+    color: rgb(57, 57, 57);
+    padding: 20px 0 ;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: 2px solid rgb(57, 57, 57);
+    display: block;
+    font-size: 28px;
+}
+
+button{
+    width: 160px;
+    padding: 15px 0;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(62, 62, 62);
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin: 0 auto;
+    display: block;
+    outline: none;
+}
+
+p{
+    font-weight: 400;
+}
+
+#message1{
+    padding-top: 40px;
+}
+.container2{
+    margin-left: -50%;
+    margin-bottom: 10%;
+}
+input[type="text"]{
+    width: 130px;
+}
+
+h4{
+    font-size: 14px;
+}

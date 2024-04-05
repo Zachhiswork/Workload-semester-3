@@ -1,0 +1,88 @@
+.cls-1, .cls-2 {
+    fill: none;
+  }
+
+  .cls-2 {
+    stroke: #f08c6f;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 0px;
+  }
+
+  .cls-3 {
+    fill: #e6e6e6;
+  }
+
+  .cls-4 {
+    fill: #ff5349;
+  }
+
+  .cls-5 {
+    fill: #fff;
+  }
+
+  .cls-6 {
+    fill: #ead6ae;
+  }
+
+  .cls-7 {
+    fill: #333;
+  }
+
+  .cls-8 {
+    fill: #18cdca;
+  }
+
+  .cls-9 {
+    fill: #2a2b45;
+  }
+
+  .cls-10 {
+    fill: #4e7fe0;
+  }
+
+  .cls-11 {
+    fill: #26527b;
+  }
+
+  .cls-12 {
+    filter: url(#drop-shadow-1);
+  }
+/* polygon, path{
+  transition: 0.3s;
+}
+polygon:hover, path:hover{
+    fill: rgb(78, 77, 77);
+      
+  } */
+  
+  .tooltip {
+    position: absolute;
+    display: none;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    pointer-events: none;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    }
+
+
+svg {
+  width: 100vw;
+  height: 100vh; /* Using viewport height for full-screen height */
+  display: block; /* Ensures the SVG fills the entire viewport */
+}
+.cls-7{
+  transform: scale(5.2);
+}
+
+ .cls-12 {
+  position: relative;
+ 
+  transform: scale(2.8) translate(2%, -5%) scaleX(1.05) ;
+}
+

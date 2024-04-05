@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/style.css">
+    <title>Book Collection API</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Book Collection Manager</h1>
+
+    <h2>Add a Book</h2>
+    <form id="addBookForm">
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title" required><br>
+        <label for="author">Author:</label><br>
+        <input type="text" id="author" name="author" required><br>
+        <input type="submit" value="Add Book">
+    </form>
+
+    <h2>Delete a Book</h2>
+    <form id="deleteBookForm">
+        <label for="bookId">Book ID:</label><br>
+        <input type="number" id="bookId" name="bookId" required><br>
+        <input type="submit" value="Delete Book">
+    </form>
+
+    <script>
+        $(document).ready(function() {
+            $('#addBookForm').on('submit', function(e) {
+                e.preventDefault();
+                var title = $('#title').val();
+                var author = $('#author').val();
+
+                $.ajax({
+                    url: '/books',
+                    method: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({ title: title, author: author }),
+                    success: function(response) {
+                        alert(response);
+                        $('#addBookForm').trigger('reset');
+                    }
+                });
+            });
+
+            $('#deleteBookForm').on('submit', function(e) {
+                e.preventDefault();
+                var bookId = $('#bookId').val();
+
+                $.ajax({
+                    url: '/books/' + bookId,
+                    method: 'DELETE',
+                    success: function(response) {
+                        alert(response);
+                        $('#deleteBookForm').trigger('reset');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
