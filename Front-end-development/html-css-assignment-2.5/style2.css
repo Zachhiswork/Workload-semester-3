@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'poppins';
+    src: url(/fonts/Poppins/27231098576.ttf);
+}
+@font-face {
+    font-family: 'light-poppins';
+    src: url(/fonts/Poppins/23653161068.ttf);
+}
+@font-face {
+    font-family: 'playfair';
+    src: url(/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+}
+:root{
+    --white-font: #fff;
+    --black-font: #000;
+    --header-size: 1.5625em;
+    --main-size: 3.125em;
+    --gray-color: rgb(101,101,101,101);
+    --W-size: 35em;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+    margin-bottom: 0px;
+    background: linear-gradient(
+        to right,
+        #fff 0%,
+        #fff 50%,
+        #000 50%,
+        #000 100%
+      );
+}
+header{
+    height: 10vh;
+}
+header>nav>ul{
+list-style: none;
+padding: 0;
+margin: 0;
+ background: linear-gradient(
+        to right,
+        #fff 0%,
+        #fff 50%,
+        #000 50%,
+        #000 100%
+      );
+
+}
+header>nav>ul>li{
+    display: inline-block;
+    font-size: var(--header-size);
+    padding: 8px 0 8px;
+    margin-top: 15px;
+}
+header>nav>ul>#left-side{
+    text-align: center;
+    width: 7.5em;
+    margin: 0;
+    color: var(--white-font);
+}
+header>nav>ul>.right-side{
+    float: right;
+    margin-right: 2.5em;
+    margin-left: 2.5em;
+    color: var(--white-font);
+    width: 3em;
+    height: 1.3em;
+    border: #fff 1px solid;
+    border-radius: 30px;
+    text-align: center;
+}body>main>#gray-background{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    height: 95vh;
+    overflow: hidden;
+}
+body>main>#gray-background>#text-area{
+    grid-column-start: 1;
+grid-column-end: 1;
+    color: var(--black-font);
+    margin-top: 70px;
+}
+body>main>#gray-background>#text-area>h1{
+    font-family: 'light-poppins';
+    text-align: right;
+}
+body>main>#gray-background>#extra-text{
+    grid-column-start: 3;
+    color: var(--white-font);
+    margin-top: 620px;
+
+}
+body>main>#gray-background>#big-W{
+    grid-column-start: 2;
+    grid-column-end: 2;
+
+}
+body>main>#gray-background>#big-W>p{
+    margin: 0;
+    padding: 0;
+    font-size: var(--W-size) ;
+    font-family: 'playfair';
+    color: white;
+    mix-blend-mode: difference;
+}

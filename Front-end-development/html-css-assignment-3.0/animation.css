@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --lightest-blue: #0AF1F0;
+    --light-blue: #03D4E7;
+    --normal-blue: #09A7FF;
+    --dark-blue: #0050B8;
+    --white: #fff;
+}
+
+h1{
+    font-size: 40px;
+    color: var(--white);
+    position: absolute;
+    bottom: 52%;
+    right: 52%;
+    animation-name: example;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+h2{
+    font-size: 40px;
+    color: var(--white);
+    position: absolute;
+    bottom: 52%;
+    right: 47%;
+    animation-name: example2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+h3{
+    font-size: 40px;
+    color: var(--white);
+    position: absolute;
+    bottom: 43%;
+    right: 52%;
+    animation-name: example3;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+h4{
+    font-size: 40px;
+    color: var(--white);
+    position: absolute;
+    bottom: 43%;
+    right: 47%;
+    animation-name: example4;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example{
+    0% {  bottom: 52%; right: 52%;}
+    25%{ bottom: 52%; right: 47%}
+    50%{ bottom: 43%;
+        right: 47%;}
+    75%{ bottom: 43%;
+        right: 52%;}
+   100% {  bottom: 52%; right: 52%;}
+}
+
+@keyframes example2{
+    0% {  bottom: 52%; right: 47%;}
+    25%{ bottom: 43%; right: 47%;}
+    50%{ bottom: 43%;
+        right: 52%;}
+    75%{ bottom: 52%;
+        right: 52%;}
+   100% {  bottom: 52%; right: 47%;}
+}
+
+@keyframes example3{
+    0% {  bottom: 43%; right: 47%;}
+    25%{ bottom: 43%; right: 52%;}
+    50%{ bottom: 52%;
+        right: 52%;}
+    75%{ bottom: 52%;
+        right: 47%;}
+   100% {  bottom: 43%; right: 47%;}
+}
+@keyframes example4{
+    0% {  bottom: 43%; right: 52%;}
+    25%{ bottom: 52%; right: 52%;}
+    50%{ bottom: 52%;
+        right: 47%;}
+    75%{ bottom: 43%;
+        right: 47%;}
+   100% {  bottom: 43%; right: 52%;}
+}
+
+main{
+    display: grid;
+    grid-template-rows: 1fr 1fr ;
+}
+#animation{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#animation2{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#lightest-blue{
+    background-color: var(--lightest-blue);
+    height: 50vh;
+}
+
+#light-blue{
+    background-color: var(--light-blue);
+    height: 50vh;
+}
+
+#blue{
+    background-color: var(--normal-blue);
+    height: 50vh;
+}
+
+#dark-blue{
+    background-color: var(--dark-blue);
+    height: 50vh;
+}

@@ -1,0 +1,101 @@
+@font-face {
+    font-family: "suisse";
+    src: url(font/SuisseIntl-Regular.ttf);
+}
+
+:root {
+    --light-gray: rgb(216, 216, 216);
+    --black: rgb(54, 54, 54);
+    --white-transpart: rgba(255, 255, 255, 0.689);
+    --white-text: #fff;
+    --logo-font: "suisse";
+    --small-font-size: 0.9rem;
+    --middle-font-size: 1.3rem;
+    --large-font-size: 3.3rem;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    height: 50px;
+}
+.header-container{
+    margin-top: 10px;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 40% 45% 15%;
+    align-items: center;
+    justify-content: center;
+}
+nav>.header-container>.links{
+    margin-left: 20px;
+}
+nav>.header-container>.links>ul{
+    list-style: none;
+    margin: 0;
+}
+nav>.header-container>.links>ul>li{
+    font-size: var(--small-font-size);
+    padding-right: 30px;
+    display: inline-block;
+}
+
+nav>.header-container>.name-company{
+    font-family: var(--logo-font);
+    font-size: 25px;
+    margin-left: 7%;
+}
+
+nav>.header-container>.shopping-cart>button{
+    width: 50px;
+    height: 25px;
+    margin-left: 50%;
+    border: none;
+    border-radius: 20px;
+}
+main>.video-wrapper{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 10px;
+}
+
+main>.video-wrapper>.information-box{
+    height: 400px;
+    width: 600px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: -600px;
+}
+
+
+main>.video-wrapper>.information-box>.text-middle{
+    font-family: var(--logo-font);
+    font-size: var(--large-font-size);
+    color: var(--white-text);
+    text-align: center;
+}
+
+main>.video-wrapper>.information-box>.text-middle>p{
+    margin: 0;
+}
+
+main>.video-wrapper>.information-box>.link-button-middle{
+margin-top: 20px;
+text-align: center;
+}
+main>.video-wrapper>.information-box>.link-button-middle>button{
+    height: 40px;
+    width: 150px;
+    font-size: var(--middle-font-size);
+    background-color: var(--white-transpart); 
+    border: none;
+    border-radius: 20px;
+    color: var(--white-text);
+}
+#two-under{
+    font-size: 30px;
+    margin-left: -10px;
+}

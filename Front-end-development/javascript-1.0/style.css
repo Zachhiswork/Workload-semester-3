@@ -1,0 +1,17 @@
+
+#button{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border:solid 0.5px rgb(218, 212, 212);
+    border-radius: 5px;
+    height: 25px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.center-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
